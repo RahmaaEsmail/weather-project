@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <link rel="icon" href="images/icon.png" type="image/icon type">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/media.css">
+</head>
+<body>
+
+   <div class="header">
+    <div class="container pt-2">
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+         <a class="logo fs-5 text-white text-decoration-none text-center"><img src="images/logo.png" width="65px" height="65px" class="navbar-brand img-nav img-fluid" alt="">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white fa-2x"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#search">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscribe</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+
+   </div>
+
+     <div class="home" id="about">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-7">
+                 <div class="text-about p-5 mt-5">
+                    <h2 class="text-header text-center text-lg-start">Weather App</h2>
+                    <p class="text-muted mt-4">Having an up to date information about the weather helps us to take well-read decisions. These weather apps constantly update the forecasts for a day or hour or sometimes for even a minute. These can be simply termed as the compact weather devices, as they do not only tell about the temperature of that specific region instead they can describe the accurate time of the sunrise and sunset, the time of the rainfall, humidity levels, etc.</p>
+                 </div>
+                </div> 
+                <div class="col-lg-5">
+                  <div class="about-img">
+                    <img src="images/raining-animate-1.svg" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+     </div>
+<!-- fa-solid fa-magnifying-glass -->
+
+     <div class="search min-vh-100" id="search">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 text-center input-search">
+                <input type="search" name="search" id="searchInput" placeholder='&#128269; search City...' class="rounded-pill w-50  p-2 form-control">
+            </div>
+
+            <div class="col-lg-4 mt-5">
+                <div class="card active-card">
+                    <div class="card-header text-muted">
+                        <span id="currentDay"></span><span id="currentDate" class="float-end"></span>
+                        <div class="clearfix"></div>
+                      </div>
+                    <h2 id="country" class="text-white ms-3 mt-4"></h2>
+                    <div class="card-body p-3">
+                      <p id="temp-today" class="card-text-bold text-white d-inline-block"></p>
+                      <img id="todayImg" class="float-end" src="" alt="">
+
+                      <div class="clearfix"></div>
+                      <p id="todayCaption"></p>
+                      <div class="icons text-white pb-4 mt-4">
+                        <i class="fa-solid fa-umbrella"></i><span id="humidity" class="ms-2">65 %</span>
+                        <i class="fa-solid fa-wind ms-3"></i> <span id="wind">6.1 km/h</span>
+                        <i class="fa-solid fa-compass ms-3"></i> <span id="direction">ENE</span>
+                      </div>
+                    </div>
+
+                  </div>
+            </div>
+
+            <div class="col-lg-4 mt-5">
+                <div class="card card2">
+                    <div class="card-header header2 text-muted">
+                        <span class="nextDay"></span><span class="float-end nextDate"></span>
+                        <div class="clearfix"></div>
+                      </div>
+                      
+                    <div class="card-body text-center">
+                      <img id="nextImg" class="mt-2 nextImg" src="" alt="">
+                        <p id="nextTempMax" class="card-text text-white next-day nextTempMax"></p>
+                         <p id="nextTempMin" class="text-white nextTempMin"></p>
+                      <div class="clearfix"></div>
+                      <p id="nextCaption" class="pb-3 nextCaption"></p>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-lg-4 mt-5">
+                <div class="card card2">
+                    <div class="card-header header2 text-muted">
+                        <span class="nextDay"></span><span class="float-end nextDate"></span>
+                        <div class="clearfix"></div>
+                      </div>
+                     
+                      <div class="card-body text-center">
+                        <img id="nextImg2" class="nextImg mt-2" src="" alt="">
+                          <p id="nextTempMax2" class="card-text text-white next-day nextTempMax"></p>
+                           <p id="nextTempMin2" class="text-white nextTempMin"></p>
+                        <div class="clearfix"></div>
+                        <p id="nextCaption2" class="pb-3 nextCaption"></p>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="mobile" id="mobile">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mobile-img">
+                        <img src="images/download.png" class="w-100" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5">
+                    <div class="mobile-text text-center mt-5">
+                        <h2 class="text-header">Mobile App</h2>
+                       <p class="mt-4 text-muted"> This weather app is one of best free weather apps with full features:
+                        Local weather weather map (weather map service) and weather widgets.</p>
+                        <div class="btns mt-5">
+                            <button class="rounded-pill text-white p-2">Download Android</button>
+                            <button class="rounded-pill text-white p-2 ms-2">Download iOS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+
+
+     <div class="subscribe mt-5 p-5" id="subscribe">
+         <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 mt-3">
+                    <div class="subscripe-text text-center">
+                        <h2 class="text-header">Subscribe</h2>
+                        <h5 class="text-muted">Get daily weather updates, quotes & more..</h5>
+                        <input type="email" name="email" id="email" style="font-family:Arial, fontAwesome"  placeholder="&#xf0e0; Enter your email to subscribe..." required class="mt-4 rounded-pill form-control">
+                        <div class="btns">
+                          <button class="mt-4 rounded-pill p-3 text-white">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="subscribe-img px-5">
+                      <img class="w-75 ms-5" src="images/subscribe.png" alt="">
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+
+     <footer class="d-flex justify-content-center flex-column align-items-center p-5">
+      <p class="text-white">Copyright &copy; 2021 Designed by Menna El-adl. All rights reserved</p>
+      <div class="icons-social text-white">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter ms-2"></i>
+        <i class="fa-brands fa-pinterest ms-2"></i>
+        <i class="fa-brands fa-google-plus-g ms-2"></i>
+      </div>
+     </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

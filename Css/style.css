@@ -1,0 +1,116 @@
+:root{
+    --main-color: #37aec3;
+}
+body{
+   font-size:  century-gothic, sans-serif;
+}
+.header{
+   
+    background-image: url(../images/wave-lg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 200px;
+}
+.img-nav{
+    vertical-align: middle
+}
+.nav-link{
+    color: white !important;
+    font-size: 20px;
+}
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0;
+}
+.navbar-toggler[aria-expanded='true']
+{
+   color: var(--main-color);
+}
+.text-about{
+    color: var(--main-color);
+    line-height: 1.8;
+}
+.text-header{
+    font-weight: 400
+}
+.text-about p{
+    font-size: 18px;
+}
+
+
+
+
+.input-search input{
+    border:  1px solid var(--main-color);
+    transform: translateX(50%);
+}
+.active-card{
+    background-color:  #3199ab;
+}
+.card-header{
+    background-color:  #374850;
+    color:  #bfc1c8 !important;
+}
+.card-text-bold{
+    font-size :60px;
+    font-weight: bold;
+}
+.card2{
+    background-color:   #83bbc4;
+    transition: all 0.5s
+}
+.header2{
+    background-color:  #455a64;
+    transition: all 0.5s
+}
+.card2:hover{
+    background-color: #3199ab;
+}
+.card2:hover .header2{
+    background-color: #374850;
+}
+
+.next-day{
+    font-size: 60px;
+}
+
+
+.mobile-text{
+    line-height: 1.8;
+}
+.mobile-text h2{
+   color: var(--main-color);
+}
+.btns button{
+    background-color: var(--main-color);
+    border: 1px solid #3199ab;
+    transition: all 0.5s;
+}
+.btns button:hover{
+    background-color: white !important;
+    color: #3199ab !important;
+}
+
+
+.subscripe-text h2{
+    color: var(--main-color);
+}
+.subscripe-text input{
+    border:1px solid #3199ab;
+    box-shadow: 0 0 0 0;
+}
+.form-control:focus{
+    box-shadow: 0 0  0 0 transparent;
+}
+
+
+footer{
+    background-color:  #212529;
+}
+
+.icons-social i:hover{
+    color: red !important;
+}
+#searchInput,.email{
+    font-family:Arial, FontAwesome;
+}
