@@ -4,6 +4,7 @@
 body{
    font-size:  century-gothic, sans-serif;
 }
+
 .header{
    
     background-image: url(../images/wave-lg.svg);
@@ -15,9 +16,13 @@ body{
 .img-nav{
     vertical-align: middle
 }
-.nav-link{
-    color: white !important;
+.nav-link,.nav-link.active,.nav-link.visited{
+    color: white ;
     font-size: 20px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-nav .nav-link{
+    color: #3199ab !important;
 }
 .navbar-toggler:focus{
     box-shadow: 0 0 0 0;
